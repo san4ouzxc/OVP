@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Калькулятор</title>
+    <script src="main.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #4b6cb7, #182848);
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #fff;
+        }
+
+        form {
+            background-color: #fff;
+            color: #333;
+            margin: 20px;
+            padding: 25px;
+            width: 350px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type=number] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        input[type=button] {
+            background-color: #ff5733;
+            color: white;
+            padding: 12px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type=button]:hover {
+            background-color: #e64a19;
+        }
+
+        p {
+            text-align: left;
+            font-size: 18px;
+            background-color: #ce3939;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Калькулятор 1</h2>
+
+        <form id="fuelForm">
+            Hp,%: <input type="number" id="hp" name="hp"><br>
+            Cp,%: <input type="number" id="cp" name="cp"><br>
+            Sp,%: <input type="number" id="sp" name="sp"><br>
+            Np,%: <input type="number" id="np" name="np"><br>
+            Op,%: <input type="number" id="op" name="op"><br>
+            Wp,%: <input type="number" id="wp" name="wp"><br>
+            Ap,%: <input type="number" id="ap" name="ap"><br>
+            <input type="button" value="Розрахувати" onclick="calculate()">
+        </form>
+
+        <p id="result"></p>
+
+        <h2>Калькулятор 2</h2>
+
+        <form id="fuelForm2">
+            Cf,%: <input type="number" id="cf" name="cf"><br>
+            Hf,%: <input type="number" id="hf" name="hf"><br>
+            Of,%: <input type="number" id="of" name="of"><br>
+            Sf,%: <input type="number" id="sf" name="sf"><br>
+            Нижча теплота згоряння, МДж/кг: <input type="number" id="x1" name="x1"><br>
+            Вологість,%: <input type="number" id="x2" name="x2"><br>
+            Зольність,%: <input type="number" id="x3" name="x3"><br>
+            Вміст ванадію, мг/кг: <input type="number" id="v" name="v"><br>
+            <input type="button" value="Розрахувати" onclick="calculate2()">
+        </form>
+
+        <p id="result2"></p>
+    </div>
+
+</body>
+
+</html>
