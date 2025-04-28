@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Калькулятор прибутку СЕС</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>Калькулятор прибутку сонячної електростанції</h2>
+
+  <label>Середньодобова потужність (Pс), МВт:</label><br>
+  <input type="number" id="Pc" step="0.1"><br>
+
+  <label>Середньоквадратичне відхилення (σ), МВт:</label><br>
+  <input type="number" id="sigma" step="0.1"><br>
+
+  <label>Вартість електроенергії (B), грн/кВт⋅год:</label><br>
+  <input type="number" id="B" step="0.1"><br>
+
+  <label>Допустиме відхилення прогнозу (δ), %:</label><br>
+  <input type="number" id="delta" step="0.1"><br>
+
+  <button onclick="calculate()">Розрахувати прибуток</button>
+
+  <div class="result" id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
