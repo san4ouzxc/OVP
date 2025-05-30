@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Електропередача</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-main">
+            <h2 class="task-title">Завдання 1</h2>
+            <div class="form">
+                <label for="PL110KVOmegaVal">ПЛ-110 кВ:</label>
+                <input type="text" id="PL110KVOmegaVal">
+                <label for="T110KVOmegaVal">Т-110 кВ:</label>
+                <input type="text" id="T110KVOmegaVal">
+                <label for="V110KVOmegaVal">V-110 кВ:</label>
+                <input type="text" id="V110KVOmegaVal">
+                <label for="V10KVOmegaVal">V-10 кВ (малооливний):</label>
+                <input type="text" id="V10KVOmegaVal">
+                <label for="tiresOmegaVal">Збірні шини 10кВ на 1 приєднання:</label>
+                <input type="text" id="tiresOmegaVal">
+                <label for="PL110KVTviVal">ПЛ-110 кВ:</label>
+                <input type="text" id="PL110KVTviVal">
+                <label for="T110KVTviVal">Т-110 кВ:</label>
+                <input type="text" id="T110KVTviVal">
+                <label for="V110KVTviVal">V-110 кВ:</label>
+                <input type="text" id="V110KVTviVal">
+                <label for="V10KVTviVal">V-10 кВ:</label>
+                <input type="text" id="V10KVTviVal">
+                <label for="tiresTviVal">Збірні шини 10кВ на 1 приєднання:</label>
+                <input type="text" id="tiresTviVal">
+                <label for="PlannedKMaxVal">kmax:</label>
+                <input type="text" id="PlannedKMaxVal">
+                <button id="button__first" class="button-first">Обрахувати</button>
+            </div>
+            <div class="result">
+                <h3 class="result-title">Результати</h3>
+                <table>
+                    <tr><th>Назва</th><th>Результат</th></tr>
+                    <tr><td>Частота відмов одноколової системи</td><td id="OmegaSumVal"></td></tr>
+                    <tr><td>Середня тривалість відновлення</td><td id="tvosVal"></td></tr>
+                    <tr><td>Коефіцієнт аварійного простою</td><td id="kaosVal"></td></tr>
+                    <tr><td>Коефіцієнт планового простою</td><td id="kposVal"></td></tr>
+                    <tr><td>Частота відмов двох кіл</td><td id="DKOmega"></td></tr>
+                    <tr><td>Частота з секц. вимикачем</td><td id="DSOmega"></td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="container-main">
+            <h2 class="task-title">Завдання 2</h2>
+            <div class="form">
+                <label for="ZperAVal">Зпер.а:</label>
+                <input type="text" id="ZperAVal">
+                <label for="ZperPVal">Зпер.п:</label>
+                <input type="text" id="ZperPVal">
+                <label for="OmegaVal">ω:</label>
+                <input type="text" id="OmegaVal">
+                <label for="tvVal">tв:</label>
+                <input type="text" id="tvVal">
+                <label for="kpVal">kп:</label>
+                <input type="text" id="kpVal">
+                <label for="PmVal">Pм:</label>
+                <input type="text" id="PmVal">
+                <label for="TmVal">Tм:</label>
+                <input type="text" id="TmVal">
+                <button id="button__second" class="button-second">Обрахувати</button>
+            </div>
+            <div class="result">
+                <h3 class="result-title">Результати</h3>
+                <table>
+                    <tr><th>Назва</th><th>Результат</th></tr>
+                    <tr><td>Аварійне недовідпущення</td><td id="WnedaVal"></td></tr>
+                    <tr><td>Планове недовідпущення</td><td id="WnedpVal"></td></tr>
+                    <tr><td>Збитки</td><td id="ZperVal"></td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
