@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Веб-калькулятор</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Веб-калькулятор</h1>
+
+    <label for="powerEP1">Номінальна потужність ЕП (кВт):</label>
+    <input type="text" id="powerEP1" name="powerEP1" />
+
+    <label for="utilizationEP6">Коефіцієнт використання ЕП6:</label>
+    <input type="text" id="utilizationEP6" name="utilizationEP6" />
+
+    <label for="reactiveFactorEP4">Коефіцієнт реактивної потужності ЕП4:</label>
+    <input type="text" id="reactiveFactorEP4" name="reactiveFactorEP4" />
+
+    <button onclick="WebCalculator.calculate()">Розрахувати</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
